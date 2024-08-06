@@ -1,24 +1,30 @@
-import logo from './logo.svg';
+
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Register from './Components/Register';
+import Login from './Components/Login';
 import './App.css';
+import Detector from './Components/Detector';
+import PasswordReset from './Components/PasswordReset';
+import Profile from './Components/Profile';
+import DoctorProfile from './Components/DoctorProfile';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Routes>
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/detector" element={<Detector/>}/>
+          <Route path="/passwordReset" element={<PasswordReset/>}/>
+          <Route path="/profile" element={<Profile/>} />
+          <Route path="/create-profile" element={<DoctorProfile/>}/>
+          {/* <Route path="/" component={Login} /> */}
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
