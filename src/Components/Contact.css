@@ -1,0 +1,60 @@
+.contact-page {
+  min-height: calc(100vh - 120px); /* Adjust for navbar and footer height */
+  display: flex;
+  background-color: rgb(0, 19, 59); /* Background for the whole page */
+}
+.half-page {
+  height: 100vh; /* Make each half take full screen height */
+  width: 50%; /* Each half takes up 50% of the width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.left-side {
+  background-color: rgb(0, 15, 48); /* Light blue for the left side */
+ 
+ 
+}
+
+.right-side {
+  background-color: rgb(255, 255, 255); /* White or any other color for the right side */
+}
+
+.demo-text {
+  font-size: 50px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+
+.demo-introduction {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  line-height: 1.5;
+  text-align: center;
+  width: 80%;
+}
+
+.topic{
+  font-size: 30px;
+}
+
+.contactdetails{
+  color: aliceblue;
+  margin-bottom: 5px;
+}
+.contactdetails a {
+  color: rgb(255, 255, 255); /* Change to your desired color */
+  font-size: 15px;
+ 
+}
+
+.contactdetails a:hover {
+  color: rgb(0, 119, 255); /* Optional: change color on hover */
+}

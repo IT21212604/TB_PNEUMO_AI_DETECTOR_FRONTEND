@@ -1,7 +1,9 @@
-
 import React, { useEffect, useState } from 'react';
 import './Profile.css';
 import { useNavigate } from 'react-router-dom';
+
+import Footer from './Footer';
+import Navbar from './Navbar';
 
 const Profile = () => {
   const [userDetails, setUserDetails] = useState(null);
@@ -15,44 +17,110 @@ const Profile = () => {
   const handleRegisterDoctor = () => {
     navigate('/create-profile');
   };
+  
+  const handleRegisterAdmin = () => {
+    navigate('/register');
+  };
 
   const handleDetector = () => {
     navigate('/detector');
   };
+
+  
+  const handleDetails = () => {
+    navigate('/allpatientdetails');
+  };
+  
+  
 
   if (!userDetails) {
     return <div>Loading...</div>;
   }
 
   return (
-    <div className="profile-container">
-      <div className="profile-box">
-        <h2>User Profile</h2>
-        <div className="profile-details">
-          <p><strong>Full Name:</strong> {userDetails.fullName}</p>
-          <p><strong>NIC:</strong> {userDetails.nic}</p>
-          <p><strong>Username:</strong> {userDetails.username}</p>
-          <p><strong>User Type:</strong> {userDetails.userType}</p>
-          {userDetails.userType === 'doctor' && (
-            <>
-              <p><strong>Medical License Number:</strong> {userDetails.medicalLicenseNumber}</p>
-              <p><strong>Specialization:</strong> {userDetails.specialization}</p>
-              <p><strong>Years of Experience:</strong> {userDetails.yearsOfExperience}</p>
-              <p><strong>Hospital Name:</strong> {userDetails.hospitalName}</p>
-              <p><strong>Department:</strong> {userDetails.department}</p>
-            </>
-          )}
+    <div className="profile-page">
+      <Navbar />
+
+      <div className="profile-container-single">
+        <div className="profile-box">
+          <div className="profile-content">
+            {/* Profile Details Section */}
+            <div className="profile-details-section">
+              <h2>{userDetails.fullName} - Profile Information</h2>
+              
+              <table className="profile-details">
+                <tbody>
+                  <tr>
+                    <td><strong>Name</strong></td>
+                    <td>{userDetails.fullName}</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Email</strong></td>
+                    <td>{userDetails.email}</td>
+                  </tr>
+                  <tr>
+                    <td><strong>User Type</strong></td>
+                    <td>{userDetails.userType}</td>
+                  </tr>
+
+                  {userDetails.userType === 'doctor' && (
+                    <>
+                      <tr>
+                        <td><strong>Medical License Number</strong></td>
+                        <td>{userDetails.medicalLicenseNumber}</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Specialization</strong></td>
+                        <td>{userDetails.specialization}</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Years of Experience</strong></td>
+                        <td>{userDetails.yearsOfExperience}</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Hospital Name</strong></td>
+                        <td>{userDetails.hospitalName}</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Department</strong></td>
+                        <td>{userDetails.department}</td>
+                      </tr>
+                    </>
+                  )}
+                </tbody>
+              </table>
+              
+              <div className="action-button-box">
+                {userDetails.userType === 'user' ? (
+                  <>
+                    <p>Add new Doctors and New Admin Here.</p>
+                    <button onClick={handleRegisterDoctor} className="action-button">Enroll Doctor</button>
+                    <button onClick={handleRegisterAdmin} className="action-button">Enroll Admin</button>
+                  </>
+                ) : (
+                  <>
+                  <button onClick={handleDetector} className="action-button">Detector</button>
+                  {userDetails.userType === 'doctor' && (
+                    <button onClick={handleDetails} className="action-button2">View Patient Details</button>
+                  )}
+                  
+                  </>
+                  
+                )}
+              </div>
+            </div>
+
+            {/* Background Image Section */}
+            <div className="profile-background-image"></div>
+            
+                  
+          </div>
         </div>
-        {userDetails.userType === 'user' ? (
-          <button onClick={handleRegisterDoctor} className="action-button">Register Doctor</button>
-        ) : (
-          <button onClick={handleDetector} className="action-button">Detector</button>
-        )}
       </div>
+
+      <Footer />
     </div>
   );
 };
 
 export default Profile;
-
-

@@ -1,0 +1,128 @@
+.patient {
+    /*background-image: url('C:/Users/Lawanya/OneDrive/PROJECTS/TB PNEUMO Detector 1/TB PNEUMO Detector/frontend/public/allpatient bg.jpg'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #001F3F;
+}
+
+/* General container styling */
+.all-patient-details-container {
+    max-width: 1200px;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for readability */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: 80vh; /* Limits the container height and enables scrolling within */
+}
+
+/* Search container styling */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 300px;
+}
+
+.search-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #001F3F; /* Search button color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-btn:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+/* Table styling */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #001F3F; /* Table header color */
+    color: white;
+    font-weight: bold;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tr:hover {
+    background-color: #e9ecef; /* Light hover effect for table rows */
+}
+
+/* Download button styling */
+.download-btn {
+    padding: 8px 16px;
+    font-size: 1rem;
+    color: white;
+    background-color: #28a745; /* Green color for download button */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #218838; /* Darker green for hover effect */
+}
+
+/* Footer styling */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .search-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .download-btn, .search-btn {
+        width: 100%;
+    }
+
+    .table th, .table td {
+        font-size: 0.9rem;
+    }
+}

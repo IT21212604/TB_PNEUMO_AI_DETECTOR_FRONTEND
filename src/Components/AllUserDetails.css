@@ -1,0 +1,38 @@
+.user-details-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.user-details-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.user-details-table th, .user-details-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.user-details-table th {
+    background-color: #f2f2f2;
+}
+
+.user-details-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.user-details-table button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.user-details-table button:hover {
+    background-color: #007BFF;
+    color: white;
+}

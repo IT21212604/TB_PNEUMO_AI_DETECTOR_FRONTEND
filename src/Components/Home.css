@@ -1,0 +1,102 @@
+
+.home-container {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0; /* Remove default margin ,,,,,,,,,////////Dont touch this code*/
+    font-family: 'Arial', sans-serif; /* Set your font */
+    
+
+    
+  }
+  
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*width: 100%;
+    height: 100%;*/
+    object-fit: cover;
+    z-index: -1; /* Video stays in the background */
+  }
+  
+  .container {
+    position: relative;
+    z-index: 1; /* Makes sure content is above the video */
+    color: rgb(255, 255, 255);
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .title1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: rgb(0, 0, 0);
+  }
+  
+  .description {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: rgb(0, 0, 0);
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    
+  }
+  
+  .feature-card {
+    background-color: rgba(0, 0, 0, 0.719); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-decoration: none; /* Remove underline from anchor */
+    color: white; /* Ensure the text is white for visibility */
+    transition: transform 0.2s ease, background-color 0.3s ease;
+  }
+
+  .feature-card2{
+   
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%; /* Adjust width as needed */
+  color: rgb(0, 0, 0);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+  .feature-card:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    background-color: rgba(0, 0, 0, 0.897); /* Darker background on hover */
+  }
+  
+  .feature-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: rgb(255, 255, 255);
+  }
+  
+  .feature-card p {
+    font-size: 1.2rem;
+  }
+  
+  @media (max-width: 768px) {
+    /* For smaller screens, stack feature cards vertically */
+    .features {
+      flex-direction: column;
+    }
+  
+    .feature-card {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+  
+

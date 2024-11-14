@@ -1,92 +1,205 @@
-/* src/Login.css */
+
 .login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f2f5;
-  }
+  display: flex;
+  justify-content: center; /* Align the login box to the center */
+  align-items: center;
+  height: 100vh;
+  background-image: url('K:\NDT\Project\TB PNEUMO Detector\frontend\public\bg.jpg'); /* Relative path */
+  background-size: cover; /* Scale the image to cover the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
   
-  .login-box {
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-  }
-  
-  .login-box h2 {
-    text-align: center;
-    margin-bottom: 1rem;
-    color: #333;
-  }
-  
-  .input-group {
-    margin-bottom: 1rem;
-  }
-  
-  .input-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: #333;
-  }
-  
-  .input-group input, .input-group select {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .remember-me {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-  }
-  
-  .remember-me input {
-    margin-right: 0.5rem;
-  }
-  
-  .forgot-password {
-    display: block;
-    text-align: right;
-    margin-bottom: 1rem;
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .login-button {
-    width: 100%;
-    padding: 0.5rem;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .login-button:hover {
-    background-color: #0056b3;
-  }
+}
 
-  /* Login.css */
-.forgot-password-container {
+.login-box {
+  
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /*max-width: 25dvw;*/
+  max-height: 70vh;
+  min-width: 300px; /* Minimum width */
+  min-height: 400px; /* Minimum height */
+  max-width: 90%; /* Allow it to grow on larger screens */
+  /*margin: 0px auto ; /* Center the box horizontally */
+  /*height: auto; /* Allow height to adjust based on content */
+  z-index: 2;
+  
+  
+}
+
+.login-box h2 {
   text-align: center;
-  margin-top: 1rem;
+  margin-bottom: 20px;
+  color: #d4d4d4;
 }
 
-.forgot-password-button {
-  background: none;
-  border: none;
-  color: #007bff;
-  cursor: pointer;
-  text-decoration: underline;
-  padding: 0;
+.input-grouplogin {
+  margin-bottom: 5px;
+  width: 100%;
+
+
+}
+
+.input-grouplogin label {
   font-size: 14px;
+  color: #d4d4d4 !important;
+ 
+  
 }
 
-.forgot-password-button:hover {
-  color: #0056b3;
+.input-grouplogin input,
+.input-grouplogin select {
+  width: 100%;
+  padding: 7px;
+  margin-top: 5px;
+  background-color: #d4d4d4 !important;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
+
+
+
+/*.remember-me input {
+  margin: 0px !important;
+}*/
+
+/*.remember-me label {
+  font-size: 12px;
+  color: rgb(6, 142, 160);
+*/
+
+.forgot-password-container {
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.forgot-password-container a {
+  color: rgb(6, 142, 160);
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.forgot-password-container a:hover {
+  text-decoration: underline;
+}
+
+.login-button {
+  width: 60%;
+  background-color: #036f8a;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 15px;
   
+}
+
+.login-button:hover {
+  background-color: #0eb7ce;
+}
+
+.no-account {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 12px;
+  
+}
+
+.no-account p {
+  margin: 0;
+  color: white;
+}
+.no-account a {
+  margin: 0;
+  color: rgb(6, 142, 160);
+}
+
+
+
+
+/* Role selection styling */
+/*.role-selection {
+  display: flex;
+  flex-direction: row; /* Arrange radio buttons horizontally */
+  /*margin-top: 5px; /* Add some space above the radio buttons */
+/*}
+
+/* Label for radio buttons */
+/*.role-selection label {
+  display: flex;
+  align-items: center; /* Center the label text vertically */
+  /*margin-right: 15px; /* Space between radio buttons */
+  /*font-size: 14px; /* Adjust font size */
+  /*color: #003366; /* Color for text */
+/*}
+
+/* Radio button styling */
+/*.role-selection input[type="radio"] {
+  margin-right: 5px; /* Space between the radio button and label */
+/*}
+
+/* ... Other existing styles ... */
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Video stays in the background */
+}
+.toggle-switch {
+  position: relative; /* Position for the slider */
+  display: flex;
+  align-items: center;
+  width: 200px; /* Adjust width as needed */
+  margin: 20px auto; /* Center the toggle switch */
+  color: #24a6f1;
+ 
+}
+
+.toggle-switch input {
+  display: none; /* Hide the default radio buttons */
+}
+
+.toggle-switch label {
+  flex: 1; /* Allow labels to take equal space */
+  padding: 10px 0; /* Vertical padding */
+  text-align: center; /* Center text */
+  border: 2px solid #036f8a; /* Border color */
+  border-radius: 25px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, color 0.3s; /* Transition for smooth effect */
+}
+
+.toggle-switch label:hover {
+  background-color: #e0f7fa; /* Light background on hover */
+}
+
+.toggle-switch input:checked + label {
+  background-color: #036f8a; /* Background color when checked */
+  color: white; /* Text color when checked */
+}
+
+.toggle-switch .slider {
+  position: absolute; /* Position slider absolutely */
+  top: 0; /* Align to top */
+  left: 0; /* Start at the left */
+  height: 100%; /* Full height of the switch */
+  width: 50%; /* Half the width for the slider */
+  background-color: #24a6f1; /* Slider color */
+  border-radius: 25px; /* Rounded corners */
+  transition: left 0.3s; /* Transition for smooth slide */
+}
+
+.toggle-switch input:checked#userRole + label + .slider {
+  left: 0; /* Align slider to the left */
+}
+
+.toggle-switch input:checked#doctorRole + label + .slider {
+  left: 50%; /* Move slider to the right */
+}
+

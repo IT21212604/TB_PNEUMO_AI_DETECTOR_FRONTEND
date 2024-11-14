@@ -1,0 +1,49 @@
+
+
+#mySidenav {
+  position: fixed; /* Keeps the sidebar fixed on the screen */
+  top: 0;
+  left: 0;
+  width: 160px; /* Width of the sidebar */
+  padding-top: 20px;
+  z-index: 1; /* Ensures it stays on top of other content */
+}
+
+#mySidenav a {
+  position: fixed; /* Keeps the sidebar fixed on the screen */
+  left: -130px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 160px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  text-align: left;
+ 
+  
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#help {
+  top: 170px;
+  background-color: #001c33;
+  display: flex;
+  justify-content: space-between;
+}
+
+#signout {
+  top: 250px;
+  background-color: #001c33;
+  display: flex;
+  justify-content: space-between;
+}
+#mySidenav a i {
+  /*margin-left: 20px; /* Space between the icon and text */
+  font-size: 30px; /* Icon size */
+  vertical-align: middle;
+}
+

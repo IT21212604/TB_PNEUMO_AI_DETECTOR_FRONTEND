@@ -1,0 +1,55 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    position: relative; /* or absolute depending on your layout needs */
+    
+  }
+  
+.logo-button{
+    /*width: 20px;*/
+    background: transparent;
+    border: none;
+    position: fixed;
+    top: 20px;
+    left: 5px;
+    cursor: pointer; 
+    z-index: 3;
+}
+
+.logo{
+    height: 70px;
+    width: auto;
+    
+}
+
+.logo-button:hover{
+    opacity: 0.8;
+    z-index: 3;
+}
+
+.register-page {
+    background-image: url('K:\NDT\Project\TB PNEUMO Detector\frontend\public\bg.jpg');
+    background-size: cover;
+   background-position: center;
+   min-height: 120vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden; /* Prevent scrolling */
+}
+  
+.profile-page {
+    background-color: rgb(255, 255, 255);
+    min-height: 100vh !important;
+    
+}
+
+.contact-page{
+    background-color: aqua;
+    min-height: 100vh;
+    background-size: cover;
+}
+.password-reset-page{
+    background-color: rgb(255, 255, 255);
+    min-height: 100vh;
+}
