@@ -1,10 +1,16 @@
-# Getting Started with Create React App
+# TB Pneumo Detector Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository hosts the frontend of the TB Pneumo AI Detector project, a web application designed to assist healthcare professionals in detecting pneumonia and tuberculosis from chest X-ray images using AI. The frontend is developed using React.js and includes an intuitive interface for easy navigation and user interaction.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+Project Overview
+Features
+Technologies Used
+Setup and Installation
+Usage
+Collaborators
+License
 
 ### `npm start`
 
