@@ -2,23 +2,18 @@
 
 This repository hosts the frontend of the TB Pneumo AI Detector project, a web application designed to assist healthcare professionals in detecting pneumonia and tuberculosis from chest X-ray images using AI. The frontend is developed using React.js and includes an intuitive interface for easy navigation and user interaction.
 
-## Table of Contents
+## Project Overview
 
-Project Overview
-Features
-Technologies Used
-Setup and Installation
-Usage
-Collaborators
-License
+The TB Pneumo AI Detector is an AI-powered diagnostic tool aimed at improving diagnostic precision and patient outcomes in healthcare. The frontend component provides the interface for users to upload X-ray images, view diagnostic results, and manage accounts.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **User Authentication**: Secure login and registration.
+- **Image Upload**: Allows users to upload chest X-ray images for analysis.
+- **Diagnostic Results**: Displays AI-generated results for pneumonia and tuberculosis detection.
+- **User-Friendly Interface**: Simple and responsive design for an optimal user experience.
+- **Account Management**: Profile settings and password reset options.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
 ### `npm test`
 
