@@ -25,7 +25,7 @@ The TB Pneumo AI Detector is an AI-powered diagnostic tool aimed at improving di
 ## Setup and Installation
 
 Clone this repository:
-git clone https://github.com/YourUsername/TB_Pneumo_Detector_Frontend.git
+git clone https://github.com/IT21212604/TB_PNEUMO_AI_DETECTOR_FRONTEND
 
 Navigate to the project directory:
 cd TB_Pneumo_Detector_Frontend
@@ -39,4 +39,8 @@ npm start
 
 ## Collaborators
 
-- **A.
+- **A.P.J.K.V. Gunawardana**
+- **H.T.D.G. Lawanya**
+- **K.A.M.M.U. Kuruppu**
+- **K.A.I. Oshada**
+- **Y.V.H.G. Ranathunga**
